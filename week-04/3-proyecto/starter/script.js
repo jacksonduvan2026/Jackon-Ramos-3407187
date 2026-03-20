@@ -21,26 +21,26 @@
 // ============================================
 
 // TODO: Define el nombre de tu dominio
-const DOMAIN_NAME = "Mi Dominio";
+const DOMAIN_NAME = "Mini Heroe";
 
 // TODO: Define el nombre de la entidad principal
 // Inclúyelo con espacios y mayúsculas/minúsculas
 // para poder aplicar transformaciones después
-const rawEntityName = "  nombre de la entidad  ";
+const rawEntityName = "camiseta niño super heroe";
 
 // TODO: Define una categoría o tipo (string)
-const entityCategory = "Categoría del elemento";
+const entityCategory = "Prenda infantil";
 
 // TODO: Define un código identificador (string)
 // Elige un prefijo coherente con tu dominio
-const entityCode = "COD-001";
+const entityCode = "ROP-001";
 
 // TODO: Define una descripción corta (string)
 // Debe contener varias palabras para usar includes/slice
-const entityDescription = "Descripción interesante de la entidad del dominio asignado.";
+const entityDescription = "Camiseta comoda y colorida para niños, ideal para uso diario.";
 
 // TODO: Define un dato numérico relevante (number)
-const mainValue = 0;
+const mainValue = $25000;
 
 // TODO: Define un estado booleano
 const isActive = true;
@@ -74,7 +74,7 @@ const hasValidPrefix = entityCode.startsWith(codePrefix);
 
 // TODO: Verifica si la descripción contiene una palabra clave
 // Usa includes() con una palabra importante de tu dominio
-const descriptionIsRelevant = entityDescription.includes("dominio");
+const descriptionIsRelevant = entityDescription.includes("niños");
 
 // TODO: Verifica si el código termina con los dígitos
 // Usa endsWith() con algo coherente de tu dominio
@@ -92,7 +92,7 @@ const subSeparator = "-".repeat(45);
 // Usa TODAS las variables transformadas arriba
 const mainCard = `
 ${separator}
-  ${DOMAIN_NAME.toUpperCase()} — FICHA DE ENTIDAD
+  ${DOMAIN_NAME.toUpperCase()} — 3407187
 ${separator}
 Nombre:      ${entityNameUpper}
 Categoría:   ${entityCategory}
@@ -117,7 +117,7 @@ console.log(mainCard);
 console.log("--- Validaciones ---");
 // TODO: Muestra los resultados de las validaciones con template literals
 console.log(`¿Código empieza con '${codePrefix}'?: ${hasValidPrefix}`);
-console.log(`¿Descripción contiene 'dominio'?: ${descriptionIsRelevant}`);
+console.log(`¿Descripción contiene 'niños'?: ${descriptionIsRelevant}`);
 console.log(`¿Código termina con '001'?: ${hasValidSuffix}`);
 console.log("");
 
@@ -130,6 +130,6 @@ console.log("--- Notificación ---");
 
 // TODO: Construye un mensaje corto de una línea
 // Usa template literal con el nombre limpio y el código
-const notification = `📢 Nuevo elemento disponible: ${entityName} (${entityCode})`;
+const notification = `📢 Nuevo producto disponible: ${entityName} (${entityCode})`;
 console.log(notification);
 console.log("");
