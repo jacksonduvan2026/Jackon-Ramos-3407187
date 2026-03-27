@@ -40,7 +40,7 @@ const entityCode = "ROP-001";
 const entityDescription = "Camiseta comoda y colorida para niños, ideal para uso diario.";
 
 // TODO: Define un dato numérico relevante (number)
-const mainValue = $25000;
+const mainValue = 25000;
 
 // TODO: Define un estado booleano
 const isActive = true;
